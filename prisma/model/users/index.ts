@@ -7,9 +7,9 @@ export const getAllUsers = async () => {
   return users
 }
 
-export const getUser = async (id:string) => {
+export const getUser = async (req: any) => {
   const user = await prisma.user.findUnique({
-    where: { id }
+    where: { ...req }
   })
   return user
 }
