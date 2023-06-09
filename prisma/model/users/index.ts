@@ -1,5 +1,5 @@
 import prisma from '@/prisma/prisma'
-import { User } from './typeUser'
+import { User } from '@/type/typeUser'
 
 // READ
 export const getAllUsers = async () => {
