@@ -1,8 +1,5 @@
 "use client";
 
-import { login } from "@/api/login";
-import { User } from "@/type/typeUser";
-import request from "@/utils/pages/request";
 import { FormEvent, useRef } from "react";
 
 const Login = () => {
@@ -37,7 +34,8 @@ const Login = () => {
             </a>
           </div>
           <span>or use your email for registration</span> */}
-          <input type="text" placeholder="Name" name="name" />
+          <input type="text" placeholder="First Name" name="firstName" />
+          <input type="text" placeholder="Last Name" name="lastName" />
           <input type="email" placeholder="Email" name="email" />
           <input type="password" placeholder="Password" name="password" />
           <button type="submit">Sign Up</button>

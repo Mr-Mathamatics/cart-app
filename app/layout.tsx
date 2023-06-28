@@ -15,14 +15,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const queryClient = new QueryClient();
+  // const queryClient = new QueryClient();
   return (
     <html lang="en">
       <body className={inter.className}>
-        <QueryClientProvider client={queryClient}>
-          {children}
-          {/* <ReactQueryDevtools initialIsOpen /> */}
-        </QueryClientProvider>
+        {/* <QueryClientProvider client={queryClient}> */}
+        {children}
+        {/* <ReactQueryDevtools initialIsOpen /> */}
+        {/* </QueryClientProvider> */}
       </body>
     </html>
   );
